@@ -14,7 +14,7 @@ $addImageButton.addEventListener('click', function () {
   if ($imageUrlInput.value !== '') {
     imageUrls.push($imageUrlInput.value);
     $imageUrlInput.value = '';
-    updateGallery.call();
+    updateGallery();
   }
 });
 
@@ -28,4 +28,4 @@ function updateGallery() {
   }
 }
 
-updateGallery.call();
+updateGallery();
